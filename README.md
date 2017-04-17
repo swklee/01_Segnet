@@ -28,9 +28,10 @@
     * *model_solver*.prototxt 의 첫번째 라인에서 *model_train*.prototxt 파일을 Call하므로 파일 위치에 주의하세요.
     * 실례: ```net: "/home/nhnent/H1/users/swook/SegNet/Models/bayesian_segnet_train.prototxt" ``` 
 * *model_train*.prototxt
-    * *model_train*.prototxtd 의 여덟번째 라인에서 *train_list*.txt 파일을 Call하므로 위치에 주의하세요.
+    * *model_train*.prototxt 의 여덟번째 라인에서 *train_list*.txt 파일을 Call하므로 위치에 주의하세요.
     * 실례: ```source: "/home/nhnent/H1/users/swook/SegNet/Sdb/train.txt"```
 * *train_list*.txt
     * Training을 위한 영상의 위치를 알려주는 파일
-    * /path0/image.png /path1/gtm.png
-    * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png /home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
+    * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다. 
+      * /path0/image.png /path1/gtm.png
+      * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png /home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
