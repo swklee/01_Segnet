@@ -10,13 +10,13 @@
 * Chagall에서 SegNet을 실습하기 위한 위치는 다음과 같습니다.
   * [Chagall:/home/nhnent/H1/users/swook/SegNet
 * SegNet폴더는 다음과 같은 하위 폴더와 파일을 갖고 있습니다.
-    *  cafff-segnet-cudnn5: caffe로 segnet이 구현된 코드 
-    *  camVid: Cambridge에서 제작한 Segmentation을 위한 DB, Truth map 포함
-    *  FCdb: Face DB
-    *  Fdb: Fashion DB
-    *  Sdb: Simple Object DB (Truth map 포함)
-    *  Models: SegNet에는 SegNet, SegNet-Basic, SegNet-Bayesian 등 다양한 모델이 존재. 각 모델별로 Training 및 Test할때 필요한 파일들이 저장되어 있음. 
-    *  Scripts: SegNet을 실행하기 위한 복수의 파일이 저장되어 있음
+    *  cafff-segnet-cudnn5: caffe로 segnet이 구현된 코드 저장
+    *  camVid: Cambridge에서 제작한 Segmentation을 위한 DB 및 Truth map 저장
+    *  FCdb: Face DB 저장
+    *  Fdb: Fashion DB 저장
+    *  Sdb: Simple Object DB (Truth map 포함) 저장
+    *  Models: SegNet에는 SegNet, SegNet-Basic, SegNet-Bayesian 등 다양한 모델이 존하며, 각 모델별로 Training 및 Test할때 필요한 파라미터 파일들이 저장 
+    *  Scripts: SegNet을 실행하기 위한 복수의 파일이 저장
     *  exe_test2.sh: Test하기 위한 Script
 ### Training
 * Training을 위해서는 다음의 파일이 필요합니다.
