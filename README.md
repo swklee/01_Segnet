@@ -5,12 +5,12 @@
 * I already downloaded the code and prepared to execute SegNet in our server (Chagall). If you want to try from scratch, please refer to the following link.
     * [SegNet Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html)
 
-# Training & Testing with datas
+# Training & Testing
 * Chagall Server 기준으로 실제 데이터를 어떻게 Training 하고, Test하는지 알아보겠습니다. 
 * SegNet을 Train 및 Test를 하기 위해 준비된 환경은 Chagall 서버에 존재하며 위치는 다음과 같습니다. 
     *  /home/nhnent/H1/users/swook/SegNet
 *  SegNet 하위 폴더의 구성은 아래 그림과 같습니다. 
-    *  ![Inline-image-2017-04-17 12.38.13.586.png](/files/1930187610540861299)
+    *  ![스크린샷 2017-04-17 오후 12.37.34]
     *  cafff-segnet-cudnn5: caffe로 segnet이 구현된 코드 
     *  camVid: Cambridge에서 제작한 Segmentation을 위한 DB, Truth map 포함
     *  FCdb: Face DB
@@ -27,11 +27,11 @@
 * *model_solver*.prototxt
     * SegNet train parameter 세팅 파일
     * *model_solver*.prototxt 의 첫번째 라인에서 *model_train*.prototxt 파일을 Call하므로 파일 위치에 주의하세요.
-    실례: ```net: "/home/nhnent/H1/users/swook/SegNet/Models/bayesian_segnet_train.prototxt" ``` 
+    * 실례: ```net: "/home/nhnent/H1/users/swook/SegNet/Models/bayesian_segnet_train.prototxt" ``` 
 * *model_train*.prototxt
     * *model_train*.prototxtd 의 여덟번째 라인에서 *train_list*.txt 파일을 Call하므로 위치에 주의하세요.
-    실례: ```source: "/home/nhnent/H1/users/swook/SegNet/Sdb/train.txt"```
+    * 실례: ```source: "/home/nhnent/H1/users/swook/SegNet/Sdb/train.txt"```
 * *train_list*.txt
     * Training을 위한 영상의 위치를 알려주는 파일
     * /path0/image.png /path1/gtm.png
-    실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png /home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
+    * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png /home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
