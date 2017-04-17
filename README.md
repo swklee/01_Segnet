@@ -6,9 +6,9 @@
    * 실습: [SegNet Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html)
 
 # Training & Testing
-* Chagall Server 기준으로 실제 데이터를 어떻게 Training 하고, Test하는지 알아보겠습니다. 
-* SegNet을 Train 및 Test를 하기 위해 준비된 환경은 Chagall 서버에 존재하며 위치는 다음과 같습니다. 
-    *  /home/nhnent/H1/users/swook/SegNet
+* SegNet을 실제 데이터를 이용하여 어떻게 Training 하고, Test하는지 알아보겠습니다. 
+* Chagall에서 SegNet을 실습하기위한 위치는 다음과 같습니다. 
+    * [Chagall:/home/nhnent/H1/users/swook/SegNet
 *  SegNet 하위 폴더의 구성은 아래 그림과 같습니다. 
     *  ![스크린샷 2017-04-17 오후 12.37.34]
     *  cafff-segnet-cudnn5: caffe로 segnet이 구현된 코드 
