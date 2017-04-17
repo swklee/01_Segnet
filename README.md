@@ -34,4 +34,7 @@
     * Training을 위한 영상의 위치를 알려주는 파일
     * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다.
       * /path0/image.png /path1/gtm.png
-      * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png |/home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
+* 3개의 파일 모두 SegNet/Models/폴더에 있습니다. 
+* Training 실습
+  * ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음과 같은 명령어를  
+  * ``` /SegNet/caffe-segnet/build/tools/caffe train -gpu 0 -solver /SegNet/Models/segnet_solver.prototxt ```
