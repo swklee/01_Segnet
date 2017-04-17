@@ -36,7 +36,7 @@
       * /path0/image.png /path1/gtm.png
 * 3개의 파일 모두 SegNet/Models/폴더에 있습니다. 
 ### Training 실습
-* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음의 명령어를 실행하여 Training 합니다.  
-  * ``` caffe train -gpu 0 -solver /SegNet/Models/model_solver.prototxt ```
-* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에 Bayesian SegNet으로 Training할 수 있는 exe_baysian.sh 스크립트를 작성해두었습니다(모두 동작 확인했습니다.)
-
+* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음의 명령어를 실행하여 Training 합니다.
+  * ``` caffe train -gpu 0 -solver /SegNet/Models/model_solver.prototxt ```
+* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에 Training을 위한 exe_baysian.sh 스크립트를 작성해두었습니다(모두 동작 확인했습니다.)
+  * exe_baysian.sh을 실행하면 Sdb를 타겟으로 Bayesian-SegNet기반 Training을 수행합니다.
