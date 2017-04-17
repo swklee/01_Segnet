@@ -1,10 +1,9 @@
 # Introduction
-* SegNet은 supervised learning을 기반으로 픽셀단위로 클래스를 나누는 방법입니다. 
-* 공유하는 SegNet code는 Caffe기반으로 구현되어 있으며, Chagall에서 Compile 및 Execution을 위해 공유된 파일을 다운로드하세요.
-* 다음의 링크에서 원본 코드 다운로드 가능합니다. [SegNet Repository](https://github.com/alexgkendall/caffe-segnet)
-
-* I already downloaded the code and prepared to execute SegNet in our server (Chagall). If you want to try from scratch, please refer to the following link.
-    * [SegNet Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html)
+* SegNet은 supervised learning을 기반으로 픽셀단위로 클래스를 나누는 방법이며, SegNet을 실험하는 방법에 대해 설명합니다. 
+* 공유하는 SegNet code는 Caffe기반으로 구현되어 있으므로, Caffe 및 Python 2.7 설치가 필수입니다. 
+* 다음의 링크에서 원본 코드 다운로드 및 학습이 가능합니다. 
+   * [SegNet Repository](https://github.com/alexgkendall/caffe-segnet)
+   * [SegNet Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html)
 
 # Training & Testing
 * Chagall Server 기준으로 실제 데이터를 어떻게 Training 하고, Test하는지 알아보겠습니다. 
