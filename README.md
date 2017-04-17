@@ -18,7 +18,7 @@
   *  Models: SegNet에는 SegNet, SegNet-Basic, SegNet-Bayesian 등 다양한 모델이 존하며, 각 모델별로 Training 및 Test할때 필요한 파라미터 파일들이 저장 
   *  Scripts: SegNet을 실행하기 위한 복수의 파일이 저장
   *  exe_test2.sh: Test하기 위한 Script
-### Training
+### Training 준비
 * Training을 위해서는 다음의 파일이 필요합니다.
     * 1. *model_solver*.prototxt
     * 2. *model_train*.prototxt
@@ -35,6 +35,6 @@
     * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다.
       * /path0/image.png /path1/gtm.png
 * 3개의 파일 모두 SegNet/Models/폴더에 있습니다. 
-* Training 실습
-  * ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음과 같은 명령어를  
-  * ``` /SegNet/caffe-segnet/build/tools/caffe train -gpu 0 -solver /SegNet/Models/segnet_solver.prototxt ```
+### Training 실습
+* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음의 명령어를 실행합니다.   
+* ``` caffe train -gpu 0 -solver /SegNet/Models/*model_solver*.prototxt ```
