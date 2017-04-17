@@ -32,6 +32,6 @@
     * 실례: ```source: "/home/nhnent/H1/users/swook/SegNet/Sdb/train.txt"```
 * *train_list*.txt
     * Training을 위한 영상의 위치를 알려주는 파일
-    * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다. 
+    * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다.
       * /path0/image.png /path1/gtm.png
-      * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png /home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
+      * 실례: ```/home/nhnent/H1/users/swook/SegNet/Sdb/train/org0_0.png |/home/nhnent/H1/users/swook/SegNet/Sdb/trainannot/gtm0_0.png```
