@@ -1,6 +1,5 @@
 # Introduction
-
-* SegNet learns to predict pixel-wise class labels from supervised learning.
+* SegNet은 supervised learning을 기반으로 픽셀단위로 클래스를 나누는 방법입니다. 
 * The SegNet implemetation is based on Caffe deep learning library. The first step is to download the SegNet source code on [SegNet Repository](https://github.com/alexgkendall/caffe-segnet)
 * I already downloaded the code and prepared to execute SegNet in our server (Chagall). If you want to try from scratch, please refer to the following link.
     * [SegNet Tutorial](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html)
