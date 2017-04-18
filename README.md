@@ -41,3 +41,8 @@
   * ``` caffe train -gpu 0 -solver /SegNet/Models/model_solver.prototxt ```
 * ./SegNet/cafff-segnet-cudnn5/tools/ 위치에 Training을 위한 exe_baysian.sh 스크립트를 작성해두었습니다.
   * ```exe_baysian.sh을 실행하면 Sdb를 타겟으로 Bayesian-SegNet기반 Training을 수행합니다.```
+* Training을 마치면, 아래의 위치에 weight (ex. bayesian_segnet_sdb_iter_9950.caffemodel) 저장됩니다.
+  * ```/home/nhnent/H1/users/swook/SegNet/Models/Training```
+
+### Test 준비
+  *  Sdb: Simple Object DB (Truth map 포함) 저장
