@@ -37,9 +37,9 @@
 * 3개의 파일 모두 다음의 위치에 있습니다. 
   * ```/home/nhnent/H1/users/swook/SegNet/Models/ ```
 ### Training 실습
-* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음의 명령어를 실행하여 Training 합니다.
+* ./SegNet/cafff-segnet-cudnn5/tools 위치에서 다음의 명령어를 실행하여 Training 합니다.
   * ``` caffe train -gpu 0 -solver /SegNet/Models/model_solver.prototxt ```
-* ./SegNet/cafff-segnet-cudnn5/tools/ 위치에 Training을 위한 exe_baysian.sh 스크립트를 작성해두었습니다.
+* ./SegNet/cafff-segnet-cudnn5/tools 위치에 Training을 위한 exe_baysian.sh 스크립트를 작성해두었습니다.
   * ```exe_baysian.sh을 실행하면 Sdb를 타겟으로 Bayesian-SegNet기반 Training을 수행합니다.```
 * Training을 마치면, 아래의 위치에 weight (ex. bayesian_segnet_sdb_iter_9950.caffemodel) 저장됩니다.
   * ```/home/nhnent/H1/users/swook/SegNet/Models/Training```
@@ -47,6 +47,10 @@
 ### Test 준비
 * Training 결과로 만들어진 weight를 Batch Normalisation 연산 과정이 필요합니다. ./SegNet/Scripts/ 위치에서 다음의 명령어를 실행하며, 결과는 ./SegNet/Models/Inference/ 위치에 저장됩니다. 
   * ```Scripts/python compute_bn_statistics.py /path/segnet_train.prototxt /path/model_10000.caffemodel /path/Inference/```
-  
+* ./SegNet 위치에 Batch Nomalisation을 실행하기 위한 exe_test1.sh 스크립트를 작성해두었습니다. 
+  * ```exe_test1.sh을 실행하면 bayesian_segnet_sdb_iter_9950.caffemodel 결과물을 기반으로 연산합니다.```
+
+### Test 실습
+* 
  
    
