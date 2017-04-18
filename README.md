@@ -45,4 +45,8 @@
   * ```/home/nhnent/H1/users/swook/SegNet/Models/Training```
 
 ### Test 준비
-  *  Sdb: Simple Object DB (Truth map 포함) 저장
+* Training 결과로 만들어진 weight를 Batch Normalisation 연산 과정이 필요합니다. ./SegNet/Scripts/ 위치에서 다음의 명령어를 실행하며, 결과는 ./SegNet/Models/Inference/ 위치에 저장됩니다. 
+  * Scripts/* python compute_bn_statistics.py /path/*segnet_train*.prototxt /path/*model_10000*.caffemodel /path/Inference/
+  
+ 
+   
