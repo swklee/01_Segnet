@@ -32,10 +32,10 @@
     * 실례: ```source: "/home/nhnent/H1/users/swook/SegNet/Sdb/train.txt"```
 * *train_list*.txt
     * Training을 위한 영상의 위치를 알려주는 파일
-    * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 round-truth-map을 indexing 합니다.
+    * *train_list*.txt은 다음과 같이 입력영상과 그에 대응하는 ground-truth-map을 indexing 합니다.
       * ```/path0/image.png /path1/gtm.png```
 * 3개의 파일 모두 다음의 위치에 있습니다. 
-  * ```SegNet/Models/ ```
+  * ```/home/nhnent/H1/users/swook/SegNet/Models/ ```
 ### Training 실습
 * ./SegNet/cafff-segnet-cudnn5/tools/ 위치에서 다음의 명령어를 실행하여 Training 합니다.
   * ``` caffe train -gpu 0 -solver /SegNet/Models/model_solver.prototxt ```
